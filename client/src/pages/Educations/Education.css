@@ -27,6 +27,9 @@
 #dark .education {
   background-color: rgba(255, 255, 255, 0.095);
 }
+#dark .education h2 {
+  color: white;
+}
 
 @media (max-width: 600px) {
   .education {

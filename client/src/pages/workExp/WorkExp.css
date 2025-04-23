@@ -34,6 +34,10 @@
   color: white;
 }
 
+#dark .vertical-timeline-element-date {
+  color: white !important;
+}
+
 @media (max-width: 600px) {
   .work {
     margin: 0;

@@ -6,13 +6,13 @@ const About = () => {
     <>
         <div className="about" id="about">
           <div className="row">
-            <div className="col-md-6 col-xl-6 col-lg-6 col-xs-12 about-img">
+            <div className="col-12 col-xl-6 col-lg-6 about-img">
               <img
                 src={imageProfile}
                 alt="profile_pic"
               />
             </div>
-            <div className="col-md-6 col-xl-6 col-lg-6 col-xs-12 about-content">
+            <div className="col-12 col-xl-6 col-lg-6 mt-3 mt-lg-0 about-content">
               <h1>Sobre mí</h1>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut

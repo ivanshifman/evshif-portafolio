@@ -35,6 +35,10 @@
   margin-left: 15px;
 }
 
+.Typewriter__wrapper {
+  color: #f7d60b !important;
+}
+
 .home-buttons .btn-cv:hover {
   opacity: 80%;
   transition: 1s;

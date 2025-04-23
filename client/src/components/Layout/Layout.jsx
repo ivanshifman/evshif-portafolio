@@ -5,7 +5,7 @@ import Menus from "../Menus/Menus";
 import "./Layout.css";
 
 const Layout = () => {
-  const [toggle, setToggle] = useState(true);
+  const [toggle, setToggle] = useState(false);
 
   const handleToggle = () => {
     setToggle(!toggle);

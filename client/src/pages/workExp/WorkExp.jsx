@@ -5,6 +5,7 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import "./WorkExp.css";
+import { MdWorkOutline } from "react-icons/md";
 
 const WorkExp = () => {
   return (
@@ -24,7 +25,7 @@ const WorkExp = () => {
               }}
               date="2023 - present"
               iconStyle={{ background: "#1e1e2c", color: "#fff" }}
-              icon={<SiReact />}
+              icon={<MdWorkOutline />}
             >
               <h3 className="vertical-timeline-element-title">
                 Full Stack Developer
@@ -45,7 +46,7 @@ const WorkExp = () => {
               }}
               date="2020 - 2022"
               iconStyle={{ background: "#1e1e2c", color: "#fff" }}
-              icon={<SiReact />}
+              icon={<MdWorkOutline />}
             >
               <h3 className="vertical-timeline-element-title">
                 Full Stack Developer
@@ -66,7 +67,7 @@ const WorkExp = () => {
               }}
               date="2018 - 2020"
               iconStyle={{ background: "#1e1e2c", color: "#fff" }}
-              icon={<SiReact />}
+              icon={<MdWorkOutline />}
             >
               <h3 className="vertical-timeline-element-title">
                 Full Stack Developer

@@ -1,7 +1,7 @@
 import { useForm } from "react-hook-form";
-import { toast } from "react-toastify";
 import axios from "axios";
-import { BsFacebook, BsGithub, BsLinkedin } from "react-icons/bs";
+import { showErrorToast, showSuccessToast } from "../../utils/toast";
+import { BsInstagram, BsLinkedin, BsWhatsapp } from "react-icons/bs";
 import "./Contact.css";
 
 const Contact = () => {
@@ -15,16 +15,18 @@ const Contact = () => {
 
   const onSubmit = async (data) => {
     try {
-      const res = await axios.post(`${import.meta.env.VITE_PUBLIC_BASE_API_URL}/portfolio/sendEmail`, data);
+      const res = await axios.post(
+        `${import.meta.env.VITE_PUBLIC_BASE_API_URL}/portfolio/sendEmail`,
+        data
+      );
 
       if (res.data.success) {
-        toast.success(res.data.message);
+        showSuccessToast(res.data.message);
         reset();
       } else {
-        toast.error(res.data.message);
+        showErrorToast(res.data.message);
       }
     } catch (error) {
-      console.log(error);
       if (error.response?.data?.error) {
         const msg = error.response.data.error;
 
@@ -35,19 +37,21 @@ const Contact = () => {
         } else if (msg.includes("msg")) {
           setError("msg", { type: "manual", message: msg });
         } else {
-          toast.error(msg);
+          showErrorToast(msg);
         }
       } else {
-        toast.error("An unexpected error occurred");
+        showErrorToast("An unexpected error occurred");
       }
     }
   };
+
+  const phone = import.meta.env.VITE_PHONE;
 
   return (
     <div className="contact" id="contact">
       <div className="card card0 border-0">
         <div className="row">
-          <div className="col-md-6 col-lg-6 col-xl-6 col-sm-12">
+          <div className="col-lg-6">
             <div className="card1">
               <div className="row border-line">
                 <img
@@ -58,30 +62,26 @@ const Contact = () => {
               </div>
             </div>
           </div>
-          <div className="col-lg-6 col-md-6">
-            <div className="card2 d-flex card border-0 px-4 py-5">
+          <div className="col-lg-6">
+            <div className="card2 d-flex card border-0 ps-4 ps-lg-0 px-lg-4 ms-2 py-5">
               <form onSubmit={handleSubmit(onSubmit)}>
                 <div className="row">
                   <div className="row">
-                    <h6>
-                      Contact With
-                      <BsLinkedin color="blue" size={30} className="ms-2" />
-                      <BsGithub color="black" size={30} className="ms-2" />
-                      <BsFacebook color="blue" size={30} className="ms-2" />
+                    <h6 className="text-dark fs-5">
+                      Contactame
+                      <a href="https://ar.linkedin.com/in/evelyn-shifman-a05921276" target="_blank">
+                        <BsLinkedin color="blue" size={20} className="ms-2" />
+                      </a>
+                      <a href={`https://api.whatsapp.com/send?phone=${phone}`} target="_blank">
+                        <BsWhatsapp color="green" size={20} className="ms-2" />
+                      </a>
                     </h6>
                   </div>
-
-                  <div className="row px-3 mb-4">
-                    <div className="line" />
-                    <small className="or text-center">OR</small>
-                    <div className="line" />
-                  </div>
-
                   <div className="row px-3">
                     <input
                       type="text"
                       placeholder="Enter your Name"
-                      className="mb-1"
+                      className="mt-3"
                       {...register("name")}
                     />
                     {errors.name && (
@@ -93,7 +93,7 @@ const Contact = () => {
                     <input
                       type="email"
                       placeholder="Enter Your Email Address"
-                      className="mb-1"
+                      className="mt-3"
                       {...register("email")}
                     />
                     {errors.email && (
@@ -106,7 +106,7 @@ const Contact = () => {
                   <div className="row px-3">
                     <textarea
                       placeholder="Write your message"
-                      className="mb-1"
+                      className="mt-3"
                       {...register("msg")}
                     />
                     {errors.msg && (
@@ -114,9 +114,9 @@ const Contact = () => {
                     )}
                   </div>
 
-                  <div className="row px-3">
-                    <button className="button" type="submit">
-                      SEND MESSAGE
+                  <div className="row px-lg-3 mt-3">
+                    <button className="button text-uppercase" type="submit">
+                      Enviar mensaje
                     </button>
                   </div>
                 </div>

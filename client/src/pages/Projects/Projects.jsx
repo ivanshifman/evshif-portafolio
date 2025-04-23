@@ -16,19 +16,18 @@ const Projects = () => {
           voluptate qui et animi doloribus nulla eius molestiae unde tempore ad
         </p>
         <div className="row" id="ads">
-            <div className="col-md-4">
+            <div className="col-lg-4">
               <div className="card rounded">
-                <div className="card-image">
+                <div className="card-image rounded-5">
                   <span className="card-notify-badge">Full stack</span>
                   <img
                     src="https://unctad.org/sites/default/files/2021-03/2021-03-15_eCommerceCOVID19report-1-1220x675px.jpg"
                     alt="project1"
                   />
                 </div>
-                <div className="card-image-overly m-auto mt-3">
+                <div className="card-image-overly m-auto mt-3 d-flex align-content-center">
                   <span className="card-detail-badge">Node</span>
                   <span className="card-detail-badge">Express</span>
-                  <span className="card-detail-badge">react</span>
                   <span className="card-detail-badge">Mongodb</span>
                 </div>
                 <div className="card-body text-center">
@@ -46,7 +45,7 @@ const Projects = () => {
                 </div>
               </div>
             </div>
-            <div className="col-md-4">
+            <div className="col-lg-4">
               <div className="card rounded">
                 <div className="card-image">
                   <span className="card-notify-badge">Mobile App</span>
@@ -72,7 +71,7 @@ const Projects = () => {
                 </div>
               </div>
             </div>
-            <div className="col-md-4">
+            <div className="col-lg-4">
               <div className="card rounded">
                 <div className="card-image">
                   <span className="card-notify-badge">Backend</span>
