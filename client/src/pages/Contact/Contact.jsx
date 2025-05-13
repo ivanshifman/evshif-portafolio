@@ -17,7 +17,7 @@ const Contact = () => {
   const onSubmit = async (data) => {
     try {
       const res = await axios.post(
-        "https://evshif-portafolio-backend.onrender.com/api/v1/portfolio",
+        `${import.meta.env.VITE_PUBLIC_BASE_API_URL}/portfolio/sendEmail`,
         data
       );
 
