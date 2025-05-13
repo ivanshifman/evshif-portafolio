@@ -2,7 +2,7 @@ import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
 // import path from "path";
-import portfolioRoutes from "./routes/portFolioRoute.js";
+import portfolioRoutes from "./routes/portfolioRoute.js";
 
 dotenv.config();
 
