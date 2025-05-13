@@ -1,6 +1,6 @@
 import MobileNav from "./components/MobileNav/MobileNav";
 import Layout from "./components/Layout/Layout";
-import About from "./pages/About/about";
+import About from "./pages/About/About";
 import Education from "./pages/Educations/Education";
 import Projects from "./pages/Projects/Projects";
 import WorkExp from "./pages/workExp/WorkExp";
