@@ -17,7 +17,7 @@ const Contact = () => {
   const onSubmit = async (data) => {
     try {
       const res = await axios.post(
-        `${import.meta.env.VITE_PUBLIC_BASE_API_URL}/portfolio/sendEmail`,
+        `${import.meta.env.VITE_PUBLIC_BASE_API_URL}/sendEmail`,
         data
       );
 
