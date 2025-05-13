@@ -55,7 +55,7 @@ const MobileNav = () => {
                     onClick={handleMenuClick}
                   >
                     <FcHome />
-                    Home
+                    Inicio
                   </Link>
                 </div>
                 <div className="nav-link">
@@ -68,7 +68,7 @@ const MobileNav = () => {
                     onClick={handleMenuClick}
                   >
                     <FcAbout />
-                    About
+                    Sobre mi
                   </Link>
                 </div>
                 <div className="nav-link">
@@ -81,7 +81,7 @@ const MobileNav = () => {
                     onClick={handleMenuClick}
                   >
                     <FcReadingEbook />
-                    Education
+                    Educación
                   </Link>
                 </div>
                 <div className="nav-link">
@@ -94,7 +94,7 @@ const MobileNav = () => {
                     onClick={handleMenuClick}
                   >
                     <FcVideoProjector />
-                    Projects
+                    Proyectos
                   </Link>
                 </div>
                 <div className="nav-link">
@@ -107,7 +107,7 @@ const MobileNav = () => {
                     onClick={handleMenuClick}
                   >
                     <FcPortraitMode />
-                    Work Experince
+                    Experiencia
                   </Link>
                 </div>
                 <div className="nav-link">
@@ -120,7 +120,7 @@ const MobileNav = () => {
                     onClick={handleMenuClick}
                   >
                     <FcBusinessContact />
-                    Contact
+                    Contacto
                   </Link>
                 </div>
               </div>

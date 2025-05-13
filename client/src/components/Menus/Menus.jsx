@@ -32,7 +32,7 @@ const Menus = ({ toggle }) => {
                   duration={100}
                 >
                   <FcHome />
-                  Home
+                  Inicio
                 </Link>
               </div>
               <div className="nav-link">
@@ -44,7 +44,7 @@ const Menus = ({ toggle }) => {
                   duration={100}
                 >
                   <FcAbout />
-                  About
+                  Sobre mi
                 </Link>
               </div>
               <div className="nav-link">
@@ -56,7 +56,7 @@ const Menus = ({ toggle }) => {
                   duration={100}
                 >
                   <FcReadingEbook />
-                  Education
+                  Educación
                 </Link>
               </div>
               <div className="nav-link">
@@ -68,7 +68,7 @@ const Menus = ({ toggle }) => {
                   duration={100}
                 >
                   <FcVideoProjector />
-                  Projects
+                  Proyectos
                 </Link>
               </div>
               <div className="nav-link">
@@ -80,7 +80,7 @@ const Menus = ({ toggle }) => {
                   duration={100}
                 >
                   <FcPortraitMode />
-                  Work Experince
+                  Experiencia
                 </Link>
               </div>
               <div className="nav-link">
@@ -92,7 +92,7 @@ const Menus = ({ toggle }) => {
                   duration={100}
                 >
                   <FcBusinessContact />
-                  Contact
+                  Contacto
                 </Link>
               </div>
             </div>

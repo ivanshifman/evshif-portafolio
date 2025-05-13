@@ -1,15 +1,17 @@
 import Joi from "joi";
 import nodemailer from "nodemailer";
+import dotenv from "dotenv";
+dotenv.config();
 
 const smtpHost = process.env.MAILER_HOST;
 const smtpPort = process.env.MAILER_PORT;
 const smtpUser = process.env.MAILER_USERNAME;
 const smtpPass = process.env.MAILER_PASSWORD;
-const emailFrom = process.env.MAILER_FROM;
 
 const transporter = nodemailer.createTransport({
   host: smtpHost,
   port: smtpPort,
+  secure: false,
   auth: {
     user: smtpUser,
     pass: smtpPass,
@@ -37,16 +39,31 @@ export const sendEmailController = (req, res) => {
     const { name, email, msg } = value;
 
     transporter.sendMail({
-      from: email,
-      to: emailFrom,
+      from: smtpUser,
+      to: smtpUser,
       subject: "Consulta",
       html: `
-        <h5>Detail Information</h5>
-        <ul>
-          <li><p>Name : ${name}</p></li>
-          <li><p>Email : ${email}</p></li>
-          <li><p>Message : ${msg}</p></li>
-        </ul>
+        <div style="font-family: Arial, sans-serif; padding: 20px; background-color: #f9f9f9; border-radius: 8px; border: 1px solid #ddd;">
+          <h2 style="color: #333;">Consulta recibida</h2>
+          <p style="font-size: 16px; color: #555;">Has recibido una nueva consulta desde el formulario de contacto.</p>
+    
+          <table style="width: 100%; margin-top: 20px; border-collapse: collapse;">
+            <tr>
+              <td style="padding: 8px; font-weight: bold; color: #333;">Nombre:</td>
+              <td style="padding: 8px; color: #555;">${name}</td>
+            </tr>
+            <tr style="background-color: #f0f0f0;">
+              <td style="padding: 8px; font-weight: bold; color: #333;">Email:</td>
+              <td style="padding: 8px; color: #555;">${email}</td>
+            </tr>
+            <tr>
+              <td style="padding: 8px; font-weight: bold; color: #333;">Mensaje:</td>
+              <td style="padding: 8px; color: #555;">${msg}</td>
+            </tr>
+          </table>
+
+          <p style="margin-top: 30px; font-size: 14px; color: #aaa;">Este mensaje fue generado automáticamente desde tu portafolio.</p>
+        </div>
       `,
     });
 

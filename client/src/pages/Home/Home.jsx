@@ -27,8 +27,9 @@ const Home = () => {
               options={{
                 strings: [
                   "Evelyn Shifman",
-                  "Abogada especializada en derecho civil",
-                  "Experta en asesoría legal y litigación",
+                  "Especialista en derecho laboral, civil y familia",
+                  "Experta en contratos, sucesiones y alimentos",
+                  "Asesoría legal con compromiso y claridad",
                 ],
                 autoStart: true,
                 loop: true,

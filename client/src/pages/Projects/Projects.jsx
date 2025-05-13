@@ -1,100 +1,100 @@
 import "./Projects.css";
+import imageProject1 from "../../assets/proyecto-1.webp";
+import imageProject2 from "../../assets/proyecto-2.webp";
+import imageProject3 from "../../assets/proyecto-3.webp";
 
 const Projects = () => {
   return (
     <>
-      <div className="continer project" id="projects">
+      <div className="container project" id="projects">
         <h2 className="col-12 mt-3 mb-1 text-center text-uppercase">
-          TOP RECENT PROJECTS
+          PROYECTOS DESTACADOS
         </h2>
         <hr />
         <p className="pb-3 text-center">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia a
-          odit ab, eligendi cupiditate, minima quasi excepturi modi et quo
-          delectus, iusto dolor atque aliquam aspernatur eveniet! Ipsam eum
-          nobis omnis id voluptatibus quas eos maxime ipsum facere numquam,
-          voluptate qui et animi doloribus nulla eius molestiae unde tempore ad
+          A lo largo de mi carrera, he participado en diversos proyectos legales
+          que reflejan mi compromiso con la excelencia y la ética profesional. A
+          continuación, algunos de los más destacados:
         </p>
         <div className="row" id="ads">
-            <div className="col-lg-4">
-              <div className="card rounded">
-                <div className="card-image rounded-5">
-                  <span className="card-notify-badge">Full stack</span>
-                  <img
-                    src="https://unctad.org/sites/default/files/2021-03/2021-03-15_eCommerceCOVID19report-1-1220x675px.jpg"
-                    alt="project1"
-                  />
+          <div className="col-lg-4">
+            <div className="card rounded">
+              <div className="card-image rounded-5">
+                <span className="card-notify-badge">Consultoría Legal</span>
+                <img src={imageProject1} alt="Proyecto 1" />
+              </div>
+              <div className="card-image-overly m-auto mt-3 d-flex align-content-center">
+                <span className="card-detail-badge">Derecho Laboral</span>
+                <span className="card-detail-badge">Derecho Civil</span>
+              </div>
+              <div className="card-body text-center">
+                <div className="ad-title m-auto">
+                  <h5 className="text-uppercase">
+                    Asesoría en Contratos Internacionales
+                  </h5>
                 </div>
-                <div className="card-image-overly m-auto mt-3 d-flex align-content-center">
-                  <span className="card-detail-badge">Node</span>
-                  <span className="card-detail-badge">Express</span>
-                  <span className="card-detail-badge">Mongodb</span>
-                </div>
-                <div className="card-body text-center">
-                  <div className="ad-title m-auto">
-                    <h6 className="text-uppercase">
-                      Techinfoyt Shopping Website
-                    </h6>
-                  </div>
-                  <a
-                    className="ad-btn"
-                    href="https://github.com/techinfo-youtube/ecommerce-app-2023"
-                  >
-                    View
-                  </a>
-                </div>
+                <a
+                  className="ad-btn"
+                  href="https://www.linkedin.com/in/evelyn-shifman-a05921276/?originalSubdomain=ar"
+                  target="_blank"
+                >
+                  Ver más
+                </a>
               </div>
             </div>
-            <div className="col-lg-4">
-              <div className="card rounded">
-                <div className="card-image">
-                  <span className="card-notify-badge">Mobile App</span>
-                  <img
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR356D-1YtSagN4-_ZdjZ5H9o6PKUO4h12dvw&usqp=CAU"
-                    alt="project2"
-                  />
+          </div>
+          <div className="col-lg-4">
+            <div className="card rounded">
+              <div className="card-image">
+                <span className="card-notify-badge">Litigios</span>
+                <img src={imageProject2} alt="Proyecto 2" />
+              </div>
+              <div className="card-image-overly m-auto mt-3">
+                <span className="card-detail-badge">Derecho de Familia</span>
+                <span className="card-detail-badge">Sucesiones</span>
+              </div>
+              <div className="card-body text-center">
+                <div className="ad-title m-auto">
+                  <h5 className="text-uppercase">
+                    Representación en Juicios de Sucesión
+                  </h5>
                 </div>
-                <div className="card-image-overly m-auto mt-3">
-                  <span className="card-detail-badge">React Native</span>
-                  <span className="card-detail-badge">IOS / ANDROID</span>
-                </div>
-                <div className="card-body text-center">
-                  <div className="ad-title m-auto">
-                    <h5 className="text-uppercase">Techinfoyt Coding App</h5>
-                  </div>
-                  <a
-                    className="ad-btn"
-                    href="https://github.com/techinfo-youtube/ecommerce-app-2023"
-                  >
-                    View
-                  </a>
-                </div>
+                <a
+                  className="ad-btn"
+                  href="https://www.linkedin.com/in/evelyn-shifman-a05921276/?originalSubdomain=ar"
+                  target="_blank"
+                >
+                  Ver más
+                </a>
               </div>
             </div>
-            <div className="col-lg-4">
-              <div className="card rounded">
-                <div className="card-image">
-                  <span className="card-notify-badge">Backend</span>
-                  <img
-                    src="https://www.nextwebi.com/assets/img/img-source/mobile-top-banner-28.png"
-                    alt="project1"
-                  />
+          </div>
+          <div className="col-lg-4">
+            <div className="card rounded">
+              <div className="card-image">
+                <span className="card-notify-badge">Asesoría Corporativa</span>
+                <img src={imageProject3} alt="Proyecto 3" />
+              </div>
+              <div className="card-image-overly m-auto mt-3">
+                <span className="card-detail-badge">Contratos Comerciales</span>
+                <span className="card-detail-badge">Derecho Empresarial</span>
+              </div>
+              <div className="card-body text-center">
+                <div className="ad-title m-auto">
+                  <h5 className="text-uppercase">
+                    Negociación de Contratos para Empresas
+                  </h5>
                 </div>
-                <div className="card-image-overly m-auto mt-3">
-                  <span className="card-detail-badge">Node</span>
-                  <span className="card-detail-badge">Express</span>
-                  <span className="card-detail-badge">NoSQL</span>
-                </div>
-                <div className="card-body text-center">
-                  <div className="ad-title m-auto">
-                    <h5 className="text-uppercase">Techinfoyt Job Portal</h5>
-                  </div>
-                  <a className="ad-btn" href="view">
-                    View
-                  </a>
-                </div>
+                <a
+                  className="ad-btn"
+                  href="https://www.linkedin.com/in/evelyn-shifman-a05921276/?originalSubdomain=ar"
+                  target="_blank"
+                >
+                  Ver más
+                </a>
               </div>
             </div>
+          </div>
         </div>
       </div>
     </>

@@ -1,7 +1,8 @@
 import { useForm } from "react-hook-form";
 import axios from "axios";
 import { showErrorToast, showSuccessToast } from "../../utils/toast";
-import { BsInstagram, BsLinkedin, BsWhatsapp } from "react-icons/bs";
+import {  BsLinkedin, BsWhatsapp } from "react-icons/bs";
+import imageContact from "../../assets/contacto-abogado.webp";
 import "./Contact.css";
 
 const Contact = () => {
@@ -21,7 +22,7 @@ const Contact = () => {
       );
 
       if (res.data.success) {
-        showSuccessToast(res.data.message);
+        showSuccessToast("Tu consulta ha sido enviada");
         reset();
       } else {
         showErrorToast(res.data.message);
@@ -55,7 +56,7 @@ const Contact = () => {
             <div className="card1">
               <div className="row border-line">
                 <img
-                  src="https://img.freepik.com/free-photo/hot-line-contact-us-call-center-search-interface_53876-124009.jpg?w=2000"
+                  src={imageContact}
                   alt="contact"
                   className="image"
                 />
