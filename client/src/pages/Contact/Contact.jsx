@@ -1,6 +1,6 @@
 import { useForm } from "react-hook-form";
 import axios from "axios";
-import { showErrorToast, showSuccessToast } from "../../utils/toast";
+import { showErrorToast, showSuccessToast } from "../../utils/Toast";
 import {  BsLinkedin, BsWhatsapp } from "react-icons/bs";
 import imageContact from "../../assets/contacto-abogado.webp";
 import "./Contact.css";
