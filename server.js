@@ -1,23 +1,28 @@
 import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
-// import path from "path";
 import portfolioRoutes from "./routes/portfolioRoute.js";
 
 dotenv.config();
 
 const app = express();
 
+const allowedOrigins = [
+  "http://localhost:3000", 
+  "https://evshif-portafolio-frontend.onrender.com"
+];
+
 app.use(cors({
-  origin: "http://localhost:3000 || https://evshif-portafolio-frontend.onrender.com/"
+  origin: function(origin, callback) {
+    if (!origin || allowedOrigins.includes(origin)) {
+      return callback(null, true);
+    } else {
+      return callback(new Error('CORS no permitido desde esta fuente'), false);
+    }
+  }
 }));
 app.use(express.json());
-// app.use(express.static(path.join(__dirname, "./client/build")));
 app.use("/api/v1/portfolio", portfolioRoutes);
-
-// app.get("*", (req, res) => {
-//   res.sendFile(path.join(__dirname, "./client/build/index.html"));
-// });
 
 const PORT = process.env.PORT || 8080;
 
