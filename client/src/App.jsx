@@ -5,15 +5,16 @@ import Education from "./pages/Educations/Education";
 import Projects from "./pages/Projects/Projects";
 import WorkExp from "./pages/workExp/WorkExp";
 import Contact from "./pages/Contact/Contact";
+import Footer from "./components/Footer/Footer";
 import { Helmet } from "react-helmet-async";
 import { useTheme } from "./context/ThemeContext";
 import ScrollToTop from "react-scroll-to-top";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
+
 function App() {
   const [theme] = useTheme();
-  const currentYear = new Date().getFullYear();
 
   return (
     <>
@@ -60,11 +61,7 @@ function App() {
           <WorkExp />
           <Contact />
         </main>
-        <footer className="footer pb-3 ms-3">
-          <h4 className="text-center">
-            © {currentYear} - Designed by Ivan Shifman
-          </h4>
-        </footer>
+        <Footer />
       </div>
       <ScrollToTop
         smooth
