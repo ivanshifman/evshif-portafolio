@@ -23,7 +23,7 @@ const Footer = () => {
             <em>Alimentos</em>
           </p>
           <p className="footer-contact">11-6893-2090</p>
-          <p className="footer-contact">shifmanevelyn@gmail.com</p>
+          <p className="footer-contact">evelynshifman@gmail.com</p>
           <p className="footer-contact">@abogadafamilialaboralcivil</p>
         </div>
       </div>
