@@ -41,7 +41,7 @@ const Menus = ({ toggle }) => {
                   duration={100}
                 >
                   <FcAbout />
-                  Sobre mi
+                  Sobre mí
                 </Link>
               </div>
               <div className="nav-link">

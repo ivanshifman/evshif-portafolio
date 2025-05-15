@@ -44,4 +44,7 @@
     width: 280px;
     margin-bottom: 10px;
   }
+  #dark .vertical-timeline-element-date {
+    color: black !important;
+  }
 }

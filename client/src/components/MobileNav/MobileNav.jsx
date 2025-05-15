@@ -68,7 +68,7 @@ const MobileNav = () => {
                     onClick={handleMenuClick}
                   >
                     <FcAbout />
-                    Sobre mi
+                    Sobre mí
                   </Link>
                 </div>
                 <div className="nav-link">

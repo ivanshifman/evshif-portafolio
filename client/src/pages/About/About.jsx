@@ -9,7 +9,9 @@ const About = () => {
             <div className="col-12 col-xl-6 col-lg-6 about-img">
               <img
                 src={imageProfile}
-                alt="profile_pic"
+                alt="Foto de Evelyn Shifman, abogada especializada en derecho laboral y civil"
+                decoding="async"
+                loading="eager"
               />
             </div>
             <div className="col-12 col-xl-6 col-lg-6 mt-3 mt-lg-0 about-content">

@@ -57,8 +57,9 @@ const Contact = () => {
               <div className="row border-line">
                 <img
                   src={imageContact}
-                  alt="contact"
+                  alt="Imagen contacto abogado"
                   className="image"
+                  loading="lazy"
                 />
               </div>
             </div>

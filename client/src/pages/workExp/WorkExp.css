@@ -47,4 +47,7 @@
   .work hr {
     width: 280px;
   }
+  #dark .vertical-timeline-element-date {
+    color: black !important;
+  }
 }

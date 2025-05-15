@@ -6,7 +6,7 @@ import imageProject3 from "../../assets/proyecto-3.webp";
 const Projects = () => {
   return (
     <>
-      <div className="container project" id="projects">
+      <div className="container project ms-md-3" id="projects">
         <h2 className="col-12 mt-3 mb-1 text-center text-uppercase">
           PROYECTOS DESTACADOS
         </h2>
@@ -17,11 +17,11 @@ const Projects = () => {
           continuación, algunos de los más destacados:
         </p>
         <div className="row" id="ads">
-          <div className="col-lg-4">
+          <div className="col-lg-4 col-md-6 my-md-5">
             <div className="card rounded">
               <div className="card-image rounded-5">
                 <span className="card-notify-badge">Consultoría Legal</span>
-                <img src={imageProject1} alt="Proyecto 1" />
+                <img src={imageProject1} alt="Asesoría en Contratos Internacionales" loading="lazy"/>
               </div>
               <div className="card-image-overly m-auto mt-3 d-flex align-content-center">
                 <span className="card-detail-badge">Derecho Laboral</span>
@@ -43,11 +43,11 @@ const Projects = () => {
               </div>
             </div>
           </div>
-          <div className="col-lg-4">
+          <div className="col-lg-4 col-md-6 my-md-5">
             <div className="card rounded">
               <div className="card-image">
                 <span className="card-notify-badge">Litigios</span>
-                <img src={imageProject2} alt="Proyecto 2" />
+                <img src={imageProject2} alt="Representación en Juicios de Sucesión" loading="lazy"/>
               </div>
               <div className="card-image-overly m-auto mt-3">
                 <span className="card-detail-badge">Derecho de Familia</span>
@@ -69,11 +69,11 @@ const Projects = () => {
               </div>
             </div>
           </div>
-          <div className="col-lg-4">
+          <div className="col-lg-4 col-md-6 my-md-5">
             <div className="card rounded">
               <div className="card-image">
                 <span className="card-notify-badge">Asesoría Corporativa</span>
-                <img src={imageProject3} alt="Proyecto 3" />
+                <img src={imageProject3} alt="Negociación de Contratos para Empresas" loading="lazy" />
               </div>
               <div className="card-image-overly m-auto mt-3">
                 <span className="card-detail-badge">Contratos Comerciales</span>
